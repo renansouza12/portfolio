@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    .nav{
+        display: flex;
+        gap: 20px;
+        a{
+            font-size: 18px;
+            text-transform: capitalize;
+            color: var(--White);
+            position: relative;
+            transition:  0.5s 0.7s ;
+            padding: 5px 10px;
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: var(--White);
+                height: 1px;
+                border-radius: 3px;
+                width: 0%;
+                transition: width 0.3s ease; // Add this line for a smooth transition effect
+            }
+    
+            &::after {
+                top: 0;
+                left: 0;
+            }
+    
+            &::before {
+                bottom: 0;
+                right: 0;
+            }
+    
+            &:hover::after,
+            &:hover::before {
+                width: 100%;
+            }
+    
+            &:hover::after {
+                background-color: var(--White);
+            }
+        
+        }
+        a:hover{
+            background-color: var(--White);
+            color: var(--Black);
+            
+        }
+
+      
+    }
+}

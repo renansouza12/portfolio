@@ -23,10 +23,17 @@ h2{
 }
 h3{
     font-family: 'Buda', serif;
+    color: var(--White);
+    font-weight: 100;
 }
 h4{
     font-family: 'Italianno', cursive;
 }
 p{
     font-family: 'Farsan', cursive;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Buda', serif;
 }
