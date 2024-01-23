@@ -1,0 +1,13 @@
+.start{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+
+    h1:nth-child(2){
+        transform: translateX(500px);
+        font-size: 9vw;
+    }
+}
