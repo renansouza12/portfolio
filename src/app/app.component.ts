@@ -16,19 +16,22 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
 
     //smoth scroll
-    const lenis = new Lenis()
 
-    lenis.on('scroll', (e:any) => {
-      console.log(e)
-    })
+    // const lenis = new Lenis()
+
+    // lenis.on('scroll', (e:any) => {
+    //   console.log(e)
+    // })
     
-    lenis.on('scroll', ScrollTrigger.update)
+    // lenis.on('scroll', ScrollTrigger.update)
     
-    gsap.ticker.add((time)=>{
-      lenis.raf(time * 1000)
-    })
+    // gsap.ticker.add((time)=>{
+    //   lenis.raf(time * 1000)
+    // })
     
-    gsap.ticker.lagSmoothing(0)
+    // gsap.ticker.lagSmoothing(0)
+
+
     // gsap animations
       const amountScroll = (document.querySelector('h1') as HTMLElement)?.offsetWidth;
 
@@ -82,6 +85,21 @@ export class AppComponent implements OnInit{
        
           },
         });
+
+        const myTextAbout = new SplitType('.about_text');
+        const charAbout = document.querySelectorAll('.about_text .char');
+
+        gsap.from(charAbout,{
+            opacity:0,
+            stagger:0.3,
+            transition:0.5,
+            scrollTrigger: {
+              trigger: ".about",
+              start: "top center",
+              end: "center center",
+              scrub: 1,
+            },
+        })
   }
 
 }
