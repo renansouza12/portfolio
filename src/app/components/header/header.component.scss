@@ -4,8 +4,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 100;
     padding: 1rem 3rem;
+
     .nav{
         display: flex;
         gap: 20px;
@@ -16,7 +17,8 @@ header{
             position: relative;
             transition:  0.5s 0.7s ;
             padding: 5px 10px;
-
+            font-weight: bold;
+            
             &::after,
             &::before {
                 content: '';

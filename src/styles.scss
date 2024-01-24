@@ -16,7 +16,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--Black);
+    background-color: var(--Silver);
+    
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 h1{
     font-family: 'Belleza', sans-serif;
@@ -28,7 +32,7 @@ h2{
 }
 h3{
     font-family: 'Buda', serif;
-
+    color: var(--White);
     font-weight: 100;
 }
 h4{

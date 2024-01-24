@@ -1,0 +1,22 @@
+.introduction{
+    background-color: var(--Black);
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    .introduction_title_container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: var(--White);
+            font-size: 17vw;
+            letter-spacing: 3px;
+        }
+    }
+   
+}
