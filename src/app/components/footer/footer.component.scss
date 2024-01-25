@@ -1,0 +1,23 @@
+footer{
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .footer_content{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       h2{
+        font-size: 6vw;
+        color: var(--Black);
+        font-weight: 100;
+       }
+    }
+}   
