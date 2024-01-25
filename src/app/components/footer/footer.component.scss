@@ -21,3 +21,16 @@ footer{
        }
     }
 }   
+
+@media (max-width:768px) {
+
+    footer{
+        .footer_content{
+            h2{
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+    }
+    
+}
