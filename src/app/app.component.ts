@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from 'split-type';
 gsap.registerPlugin(ScrollTrigger);
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 export class AppComponent implements OnInit{
 
   ngOnInit(): void {
-
 
     // gsap animations
       const amountScroll = (document.querySelector('h1') as HTMLElement)?.offsetWidth;
@@ -83,17 +81,6 @@ export class AppComponent implements OnInit{
             },
         })
 
-
-        gsap.from(".footer_img",{
-          y:-50,
-          scrollTrigger: {
-            trigger: ".carousel",
-            start: "top center",
-            end: "center center",
-            scrub: 1,
-          },
-        })
-        
         gsap.from(".footer_content",{
           y:100,
           opacity:0,
