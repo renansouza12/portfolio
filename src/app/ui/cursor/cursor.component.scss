@@ -32,3 +32,11 @@
     transform: rotate(45deg);
     z-index: 100;
 }
+
+
+@media (max-width:768px) {
+    .cursor_dot, .cursor_outline{
+        display: none;
+    }
+    
+}
