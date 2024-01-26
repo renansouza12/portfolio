@@ -86,7 +86,6 @@ export class AppComponent implements OnInit{
 
         gsap.from(".footer_img",{
           y:-50,
-          opacity:0,
           scrollTrigger: {
             trigger: ".carousel",
             start: "top center",
