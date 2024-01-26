@@ -4,19 +4,6 @@
     border-radius: 50%;
     background-color: var(--cursorPrimary);
 
-    &.hghtlightH1{
-        height: 25px;
-        width: 25px;
-        border-radius: 5%;
-        background-color: var(--cursorH1);
-    }
-    
-    &.hghtlightH2{
-        height: 25px;
-        width: 25px;
-        background-color: var(--cursorH2);
-    }
-
     &.hghtlightImage{
         height: 0px;
         width: 0px;
@@ -28,11 +15,6 @@
     width: 25px;
     border-radius: 5%;
     border: 1px solid var(--cursorPrimary);
-
-    &.hghtlightH2{
-        border-radius: 50%;
-    }
-
     
     &.hghtlightImage{
         height: 30px;

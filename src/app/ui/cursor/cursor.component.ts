@@ -18,14 +18,6 @@ export class CursorComponent implements OnInit{
     gsap.set(follower,{xPercent:-50,yPercent:-50});
 
 
-    const h1Titles = document.querySelectorAll("h1");
-    h1Titles.forEach(title => cursorHoverEffect(title,'mouseenter','hghtlightH1'));
-    h1Titles.forEach(title => cursorHoverEffect(title,'mouseleave','hghtlightH1'));
-
-    const h2Subtitles = document.querySelectorAll("h2");
-    h2Subtitles.forEach(subTitle => cursorHoverEffect(subTitle,'mouseenter','hghtlightH2'));
-    h2Subtitles.forEach(subTitle => cursorHoverEffect(subTitle,'mouseleave','hghtlightH2'));
-
     const images = document.querySelectorAll('img');
     images.forEach(image => cursorHoverEffect(image,'mouseenter','hghtlightImage'));
     images.forEach(image => cursorHoverEffect(image,'mouseleave','hghtlightImage'));
@@ -39,7 +31,7 @@ export class CursorComponent implements OnInit{
   }
   @HostListener('document:mousemove',['$event'])
   onMouseMove(event:MouseEvent){
-    gsap.to('.cursor_outline',0.3,{x:event.clientX, y:event.clientY});
+    gsap.to('.cursor_outline',0.4,{x:event.clientX, y:event.clientY});
     gsap.to('.cursor_dot',0.1,{x:event.clientX, y:event.clientY});
   }
 
