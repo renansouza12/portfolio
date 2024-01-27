@@ -6,9 +6,13 @@ footer{
     img{
         height: 100%;
         width: 100%;
+        filter: grayscale(100%);
         object-fit: cover;
+        transition: 0.5s;
     }
-
+    img:hover{
+        filter: grayscale(0%);
+    }
     .footer_content{
         position: absolute;
         top: 30%;
@@ -16,8 +20,7 @@ footer{
         transform: translate(-50%,-50%);
        h2{
         font-size: 6vw;
-        color: var(--Black);
-        font-weight: 100;
+        color: var(--Silver);
        }
     }
 }   
