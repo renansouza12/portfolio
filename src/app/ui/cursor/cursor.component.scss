@@ -3,11 +3,14 @@
     width: 5px;
     border-radius: 50%;
     background-color: var(--cursorPrimary);
-
     &.hghtlightImage{
         height: 0px;
         width: 0px;
         border: 0px ;
+    }
+
+    &.footerHightlight{
+        background-color: var(--White);
     }
 }
 .cursor_outline{
@@ -22,6 +25,10 @@
         border: 0px ;
       background-color: var(--cursorH2);
     }
+
+    &.footerHightlight{
+        border: 1px solid var(--White);
+    }
 }
 .cursor_dot, .cursor_outline{
     position: fixed;
@@ -35,6 +42,7 @@
 
 
 @media (max-width:768px) {
+
     .cursor_dot, .cursor_outline{
         display: none;
     }

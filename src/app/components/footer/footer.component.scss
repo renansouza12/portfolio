@@ -9,18 +9,48 @@ footer{
         filter: grayscale(100%);
         object-fit: cover;
         transition: 0.5s;
-    }
-    img:hover{
-        filter: grayscale(0%);
+        pointer-events: none;
     }
     .footer_content{
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        text-align: center;
        h2{
         font-size: 6vw;
-        color: var(--Silver);
+        font-weight: 100;
+        color: var(--White);
+       }
+
+       .next_page{
+        height: 40vh;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        h3,span{
+            font-size: 12vw;
+            transition: 1s;
+        }
+
+        h3{ 
+            transform: translateX(100px);
+            color: var(--Black);
+            span{
+                opacity: 0;
+                color: var(--White);
+                font-weight: bold;
+            }
+        }
+        &:hover h3{
+            transform: translateX(0px);
+        }
+        &:hover h3 span{
+            opacity: 1;
+        }
        }
     }
 }   
