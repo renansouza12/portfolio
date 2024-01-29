@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-start',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./start.component.scss','./start.responsive.component.scss']
 })
 export class StartComponent {
-
+  @Input() title!:string;
+  @Input() subTitle!:string;
 }
