@@ -17,7 +17,7 @@ import { CursorComponent } from './ui/cursor/cursor.component';
     AppRoutingModule,
     HomeComponent,
     HeaderComponent,
-    CursorComponent
+    CursorComponent,
 
   ],
   providers: [],
