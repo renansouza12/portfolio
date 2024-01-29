@@ -26,6 +26,10 @@ export class CursorComponent implements OnInit{
     cursorHoverEffect(footerComponent,'mouseenter','footerHightlight');
     cursorHoverEffect(footerComponent,'mouseleave','footerHightlight');
 
+    const links = document.querySelectorAll('a');
+    links.forEach(link => cursorHoverEffect(link,'mouseenter','linkHover'));
+    links.forEach(link => cursorHoverEffect(link,'mouseleave','linkHover'));
+
     function cursorHoverEffect(tag:any,action:any, className:any){
       tag.addEventListener(action, () => {
         dot?.classList.toggle(className);

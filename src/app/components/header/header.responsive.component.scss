@@ -18,6 +18,20 @@
             border: 1px solid rgba(255,255,255,0.15);
             a{
                 font-size: 3.5vw;
+
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: var(--White);
+                    height:0;
+                    border-radius: 0px;
+                    width: 0%;
+                    transition: non; 
+                }
+                &:hover{
+                    background-color: transparent;
+                }
             }
         }
     }

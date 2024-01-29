@@ -12,6 +12,11 @@
     &.footerHightlight{
         background-color: var(--White);
     }
+
+    &.linkHover{
+        height: 0;
+        width: 0;
+    }
 }
 .cursor_outline{
     height: 28px;
@@ -29,6 +34,10 @@
     &.footerHightlight{
         border: 1px solid var(--White);
     }
+    &.linkHover{
+        background-color: var(--cursorLink);
+        border: 1px solid var(--cursorLink);
+    }
 }
 .cursor_dot, .cursor_outline{
     position: fixed;
@@ -41,10 +50,10 @@
 }
 
 
-@media (max-width:768px) {
+@media (max-width:425px) {
 
     .cursor_dot, .cursor_outline{
-        display: block;
+        display: none;
     }
     
 }

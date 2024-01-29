@@ -17,6 +17,7 @@ footer{
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
+        overflow: hidden;
        h2{
         font-size: 6vw;
         font-weight: 100;
@@ -37,7 +38,7 @@ footer{
         }
 
         h3{ 
-            transform: translateX(100px);
+            transform: translateX(25%);
             color: var(--Black);
             span{
                 opacity: 0;
