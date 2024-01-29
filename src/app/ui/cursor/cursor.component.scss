@@ -14,9 +14,9 @@
     }
 }
 .cursor_outline{
-    height: 25px;
-    width: 25px;
-    border-radius: 5%;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
     border: 1px solid var(--cursorPrimary);
     
     &.hghtlightImage{
@@ -44,7 +44,7 @@
 @media (max-width:768px) {
 
     .cursor_dot, .cursor_outline{
-        display: none;
+        display: block;
     }
     
 }

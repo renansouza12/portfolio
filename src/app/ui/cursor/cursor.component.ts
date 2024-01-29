@@ -35,7 +35,7 @@ export class CursorComponent implements OnInit{
   }
   @HostListener('document:mousemove',['$event'])
   onMouseMove(event:MouseEvent){
-    gsap.to('.cursor_outline',0.4,{x:event.clientX, y:event.clientY});
+    gsap.to('.cursor_outline',0.2,{x:event.clientX, y:event.clientY});
     gsap.to('.cursor_dot',0.1,{x:event.clientX, y:event.clientY});
   }
 
