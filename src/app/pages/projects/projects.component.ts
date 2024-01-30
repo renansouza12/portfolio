@@ -36,7 +36,6 @@ export class ProjectsComponent implements OnInit{
       scrollTrigger: {
         trigger: 'header',
         start: '20% top',
-        end: 'bottom top',
         scrub: 1, 
       }
     });
