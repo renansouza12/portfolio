@@ -32,7 +32,6 @@ export class ProjectsComponent implements OnInit{
         start:'0% top',
         end:'bottom center',
         scrub:1,
-        markers:true
       }
     })
 
