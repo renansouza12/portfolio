@@ -1,6 +1,6 @@
 .project_card{
     height: 60vh;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -17,5 +17,11 @@
         width: 70%;
         background-color: var(--White);
         margin-right: 3rem;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
