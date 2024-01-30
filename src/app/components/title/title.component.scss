@@ -1,20 +1,27 @@
-.title{
+.title_container{
     height: 100vh;
     background-color: var(--Black);
-    display: flex;
-    flex-direction: column;
-    h2{
-        margin: 9rem 0 0 4rem;
-        font-size: 12vw;
-        font-weight: 100;
-        &:nth-child(2){
-            color: var(--Grey);
-            transform: translateY(-190px);
-        }
-        &:nth-child(3){
-            color: var(--Silver);
-            transform: translateY(-370px);
-        }
-    }
+    .project_titles{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3rem;
+        h2{
 
+            font-size: 12vw;
+            font-weight: 100;
+            &:nth-child(2){
+                color: var(--Grey);
+               transform: translateY(-40%);
+            }
+            &:nth-child(3){
+                color: var(--Silver);
+                transform: translateY(-80%);
+               
+            }
+        }
+    
+    }
+    
 }
