@@ -8,16 +8,16 @@
         justify-content: center;
         margin-left: 3rem;
         h2{
-
+            margin-top: 3rem;
             font-size: 12vw;
             font-weight: 100;
             &:nth-child(2){
                 color: var(--Grey);
-               transform: translateY(-40%);
+               transform: translateY(-60%);
             }
             &:nth-child(3){
                 color: var(--Silver);
-                transform: translateY(-80%);
+                transform: translateY(-120%);
                
             }
         }
