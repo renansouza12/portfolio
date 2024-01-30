@@ -18,17 +18,13 @@ export class CursorComponent implements OnInit{
     gsap.set(follower,{xPercent:-50,yPercent:-50});
 
 
-    // const images = document.querySelectorAll('img');
-    // images.forEach(image => cursorHoverEffect(image,'mouseenter','hghtlightImage'));
-    // images.forEach(image => cursorHoverEffect(image,'mouseleave','hghtlightImage'));
+    const images = document.querySelectorAll('img');
+    images.forEach(image => cursorHoverEffect(image,'mouseenter','hghtlightImage'));
+    images.forEach(image => cursorHoverEffect(image,'mouseleave','hghtlightImage'));
 
-    // const footerComponent = document.querySelector('footer');
-    // cursorHoverEffect(footerComponent,'mouseenter','footerHightlight');
-    // cursorHoverEffect(footerComponent,'mouseleave','footerHightlight');
-
-    // const links = document.querySelectorAll('a');
-    // links.forEach(link => cursorHoverEffect(link,'mouseenter','linkHover'));
-    // links.forEach(link => cursorHoverEffect(link,'mouseleave','linkHover'));
+    const footerComponent = document.querySelector('footer');
+    cursorHoverEffect(footerComponent,'mouseenter','footerHightlight');
+    cursorHoverEffect(footerComponent,'mouseleave','footerHightlight');
 
     function cursorHoverEffect(tag:any,action:any, className:any){
       tag.addEventListener(action, () => {
@@ -39,7 +35,7 @@ export class CursorComponent implements OnInit{
   }
   @HostListener('document:mousemove',['$event'])
   onMouseMove(event:MouseEvent){
-    gsap.to('.cursor_outline',0.2,{x:event.clientX, y:event.clientY});
+    gsap.to('.cursor_outline',0.3,{x:event.clientX, y:event.clientY});
     gsap.to('.cursor_dot',0.1,{x:event.clientX, y:event.clientY});
   }
 

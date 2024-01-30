@@ -86,6 +86,7 @@ export class HomeComponent implements OnInit{
       opacity: 0,
       yPercent: -600,
       xPercent:-500,
+      stagger:0.1,
       transition: 0.8,
       scrollTrigger: {
         trigger: '.introduction_title_container',
