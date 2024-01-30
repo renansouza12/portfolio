@@ -23,23 +23,25 @@ export class ProjectsComponent implements OnInit{
     this.setupGsapAnimations();
   }
   private setupGsapAnimations():void{
-    gsap.from('.title',{
+    gsap.to('.title',{
       opacity:0,
       stagger:0.2,
-      duration:2  
+      duration:2  ,
+      scrollTrigger:{
+        trigger:'.title_container',
+        start:'0% top',
+        end:'bottom center',
+        scrub:1,
+        markers:true
+      }
     })
 
     this.headerAnimation();
-
   }
   private headerAnimation():void{
     gsap.from('header', {
       opacity: 0,
-      scrollTrigger: {
-        trigger: 'header',
-        start: '20% top',
-        scrub: 1, 
-      }
     });
   }
+
 }
