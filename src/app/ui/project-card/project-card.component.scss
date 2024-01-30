@@ -1,0 +1,21 @@
+.project_card{
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--White);
+
+    h4{
+        font-size: 10vw;
+        font-weight: 100;
+    }
+
+    .project_image_card{
+        height: 80%;
+        width: 70%;
+        background-color: var(--White);
+        margin-right: 3rem;
+    }
+}

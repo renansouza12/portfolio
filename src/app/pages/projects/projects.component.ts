@@ -2,16 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { TitleComponent } from 'src/app/components/title/title.component';
 import { CursorComponent } from 'src/app/ui/cursor/cursor.component';
 
-
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
+import { ProjectsCatalogComponent } from 'src/app/components/projects-catalog/projects-catalog.component';
 
 gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CursorComponent,TitleComponent],
+  imports: [CursorComponent,
+            TitleComponent,
+            ProjectsCatalogComponent,
+          ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
