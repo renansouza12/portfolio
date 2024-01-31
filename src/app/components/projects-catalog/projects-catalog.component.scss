@@ -1,6 +1,31 @@
 .projects_catalog{
     height: 100%;
+    width: 100%;
     background-color:var(--Black);
     padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
+    button{
+        border: 1px solid var(--White);
+        padding: 0.5rem 1rem;
+        color: var(--White);
+        background: rgba(255,255,255,0.1);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border: 1px solid rgba(255,255,255,0.15);
+        margin: 1rem 0 3rem 0;
+        i{
+            margin-right: 1rem;
+            font-size: 15px;
+        }
+
+        span{
+            font-size: 17px;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+       
+    }
 }

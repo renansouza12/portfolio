@@ -11,6 +11,10 @@ import { ProjectCardComponent } from 'src/app/ui/project-card/project-card.compo
   styleUrl: './projects-catalog.component.scss'
 })
 export class ProjectsCatalogComponent {
+  gitHubLink(){
+    window.location.href='https://github.com/renansouza12'; 
+  }
+
   catalogProjects:Catalog[] = [
     {
       'id':1,
