@@ -14,15 +14,23 @@ export class ProjectsCatalogComponent {
   catalogProjects:Catalog[] = [
     {
       'id':1,
-      image:'https://i.ibb.co/C76VJ5F/keytap-capture.png'
+      image:'../../../assets/images/keytap-image.png'
     },
     {
       'id':2,
-      image:'https://i.ibb.co/vD60Dsb/Capture.png'
+      image:'../../../assets/images/fuyu-image.png'
     },
     {
       'id':3,
-      image:'https://github.com/renansouza12/card-details-form/blob/main/src/assets/img/screenshot.png?raw=true'
+      image:'../../../assets/images/cardDetails-image.png'
+    },
+    {
+      'id':4,
+      image:'../../../assets/images/quiz-image.png'
+    },
+    {
+      'id':5,
+      image:'../../../assets/images/aluraPortfolio-image.png'
     }
   ]
 }
