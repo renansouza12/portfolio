@@ -35,6 +35,10 @@ export class ProjectsCatalogComponent {
     {
       'id':5,
       image:'../../../assets/images/aluraPortfolio-image.png'
+    },
+    {
+      'id':6,
+      image:'../../../assets/images/decoder-image.png'
     }
   ]
 }
