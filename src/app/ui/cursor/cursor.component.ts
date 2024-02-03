@@ -26,9 +26,10 @@ export class CursorComponent implements OnInit{
     // cursorHoverEffect(footerComponent,'mouseenter','footerHightlight');
     // cursorHoverEffect(footerComponent,'mouseleave','footerHightlight');
 
-       const footerComponent = document.querySelector('.logo');
-    cursorHoverEffect(footerComponent,'mouseenter','logoHightlight');
-    cursorHoverEffect(footerComponent,'mouseleave','logoHightlight');
+    const logo = document.querySelector('.logo');
+    cursorHoverEffect(logo,'mouseenter','logoHightlight');
+    cursorHoverEffect(logo,'mouseleave','logoHightlight');
+
 
     function cursorHoverEffect(tag:any,action:any, className:any){
       tag.addEventListener(action, () => {

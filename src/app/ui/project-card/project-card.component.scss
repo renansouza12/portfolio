@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--White);
-    overflow: hidden;
+    transition: 1s;
     h4{
         font-size: 7vw;
         font-weight: 100;
@@ -15,45 +15,36 @@
     .project_image_card{
         height: 80%;
         width: 70%;
-        background-color: var(--White);
+        background-color: transparent;
         margin-right: 3rem;
-
-    
+        position: relative;
         img{
             height: 100%;
             width: 100%;
             object-fit: cover;
             transition: 0.5s;
+            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
         }
-
+    
         .hover_text{
             position: absolute;
-            top: 90%;
-            right: 0%;
-            transform: translate(-50%,-50%);
-
-            background: rgba(255,255,255,0.1);
-            -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-            border: 1px solid rgba(255,255,255,0.15);
-            width: fit-content;
-            transition: 1s;
+            left: 0;
+            bottom: 45%;
             opacity: 0;
-            h3{
-                padding: 5px 10px;
-                font-size: 3vw; 
-                transition: 1s;
-            }
+            transition: 1s;
+
         }
 
-        
-        &:hover img{
-            filter: brightness(30%);
-            scale: 1.1;
+        &:hover img {
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);        
+            transform: translateX(10%);
+            transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+            filter: brightness(50%);
         }
         &:hover .hover_text{
             opacity: 1;
+            transform: translateX(40%);
         }
-      
     }
+  
 }

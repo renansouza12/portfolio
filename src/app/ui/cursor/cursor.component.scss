@@ -12,9 +12,6 @@
     &.footerHightlight{
         background-color: var(--White);
     }
-    &.logoHightlight{
-        
-    }
 }
 .cursor_outline{
     height: 40px;
@@ -33,7 +30,7 @@
         border: 1px solid var(--White);
     }
     &.logoHightlight{
-        background: rgba(255,255,255,0.1);
+        background-color: var(--cursorLogo);
     }
 }
 .cursor_dot, .cursor_outline{

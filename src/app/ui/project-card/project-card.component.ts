@@ -1,4 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,19 +11,31 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss'
 })
-export class ProjectCardComponent implements OnInit{
-  @Input() id!:number;
-  @Input() imageCoverCard!:string;
+export class ProjectCardComponent implements OnInit {
+  @Input() id!: number;
+  @Input() imageCoverCard!: string;
 
   ngOnInit(): void {
-    //gsap animation
     const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.projects_catalog',
-        start: "-40% top",
-        end: "center center",
-        scrub: true,
+      scrollTrigger:{
+        trigger:'.project_card',
+        start:'-20% center',
+        end:'bottom center',
+        scrub:true
       }
-    }).fromTo('.project_card', { transition:1,opacity: 0 ,yPercent:300}, { opacity: 1, stagger: 0.4 ,yPercent:0})
+    })
+
+    tl.from('.project_card',{
+      opacity:0,
+      y:400
+      
+    })
+    tl.to('.project_card',{
+      stagger:0.2,
+      duration:.5,
+      opacity:1,
+      y:-70
+    })
+
   }
 }
