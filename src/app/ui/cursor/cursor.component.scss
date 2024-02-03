@@ -12,10 +12,13 @@
     &.footerHightlight{
         background-color: var(--White);
     }
+    &.logoHightlight{
+        
+    }
 }
 .cursor_outline{
-    height: 28px;
-    width: 28px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     border: 1px solid var(--cursorPrimary);
     
@@ -29,7 +32,9 @@
     &.footerHightlight{
         border: 1px solid var(--White);
     }
-
+    &.logoHightlight{
+        background: rgba(255,255,255,0.1);
+    }
 }
 .cursor_dot, .cursor_outline{
     position: fixed;

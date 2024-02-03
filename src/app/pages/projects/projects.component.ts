@@ -23,6 +23,7 @@ export class ProjectsComponent implements OnInit{
   ngOnInit(): void {
     this.setupGsapAnimations();
   }
+
   private setupGsapAnimations():void{
     gsap.to('.title',{
       opacity:0,
