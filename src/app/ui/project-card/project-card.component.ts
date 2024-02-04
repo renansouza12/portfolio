@@ -34,7 +34,7 @@ export class ProjectCardComponent implements OnInit {
       stagger:0.2,
       duration:.5,
       opacity:1,
-      y:-70
+      y:0
     })
 
   }

@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit{
       opacity: 0,
       scrollTrigger: {
         trigger: '.introduction_title_container',
-        start: 'bottom top',
+        start: 'top top',
         end: 'bottom top',
         scrub: 1,
       }
