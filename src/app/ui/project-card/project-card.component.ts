@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit ,Output,EventEmitter} from '@angular/core';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -12,9 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent implements OnInit {
-  @Input() id!: number;
-  @Input() imageCoverCard!: string;
-
   ngOnInit(): void {
     const tl = gsap.timeline({
       scrollTrigger:{
@@ -38,4 +35,12 @@ export class ProjectCardComponent implements OnInit {
     })
 
   }
+  @Input() id!: number;
+  @Input() imageCoverCard!: string;
+  @Output() detail = new EventEmitter<string>();
+
+  seeMore():void{
+    this.detail.emit();
+  }
+  
 }

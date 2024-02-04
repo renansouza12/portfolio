@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Catalog } from 'src/app/models/projects.model';
 import { ProjectCardComponent } from 'src/app/ui/project-card/project-card.component';
 
@@ -34,11 +35,13 @@ export class ProjectsCatalogComponent {
     },
     {
       'id':5,
-      image:'../../../assets/images/aluraPortfolio-image.png'
-    },
-    {
-      'id':6,
       image:'../../../assets/images/decoder-image.png'
     }
   ]
+  constructor(private router:Router){}
+
+  moreDetail(id:number){
+    this.router.navigate(['/Details',id])
+    
+  }
 }
