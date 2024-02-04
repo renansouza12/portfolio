@@ -15,7 +15,11 @@ export class SharedService {
         firstImage:"../../../assets/images/keytap-image.png",
         secondImage:"",
         thirdtImage:""
-      }
+      },
+      website:'',
+      repository:'',
+      techs:''
+      
     },
     {
       'id':2,
@@ -25,7 +29,10 @@ export class SharedService {
         firstImage:"../../../assets/images/fuyu-image.png",
         secondImage:"",
         thirdtImage:""
-      }
+      },
+      website:'',
+      repository:'',
+      techs:''
     },
     {
       'id':3,
@@ -35,7 +42,10 @@ export class SharedService {
         firstImage:"../../../assets/images/cardDetails-image.png",
         secondImage:"",
         thirdtImage:""
-      }
+      },
+      website:'',
+      repository:'',
+      techs:''
     },
     {
       'id':4,
@@ -45,7 +55,10 @@ export class SharedService {
         firstImage:"../../../assets/images/quiz-image.png",
         secondImage:"",
         thirdtImage:""
-      }
+      },
+      website:'',
+      repository:'',
+      techs:''
     },
     {
       'id':5,
@@ -55,7 +68,10 @@ export class SharedService {
         firstImage:"../../../assets/images/decoder-image.png",
         secondImage:"",
         thirdtImage:""
-      }
+      },
+      website:'',
+      repository:'',
+      techs:''
     },
   ]
 }
