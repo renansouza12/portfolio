@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Catalog } from 'src/app/models/projects.model';
+import { Projects } from 'src/app/models/projects.model';
+import { SharedService } from 'src/app/services/shared.service';
 import { ProjectCardComponent } from 'src/app/ui/project-card/project-card.component';
 
 @Component({
@@ -16,29 +17,12 @@ export class ProjectsCatalogComponent {
     window.location.href='https://github.com/renansouza12'; 
   }
 
-  catalogProjects:Catalog[] = [
-    {
-      'id':1,
-      image:'../../../assets/images/keytap-image.png'
-    },
-    {
-      'id':2,
-      image:'../../../assets/images/fuyu-image.png'
-    },
-    {
-      'id':3,
-      image:'../../../assets/images/cardDetails-image.png'
-    },
-    {
-      'id':4,
-      image:'../../../assets/images/quiz-image.png'
-    },
-    {
-      'id':5,
-      image:'../../../assets/images/decoder-image.png'
-    }
-  ]
-  constructor(private router:Router){}
+  catalogProjects:Projects[]= [];
+
+  constructor(private router:Router,private shared:SharedService){
+    this.shared.projectDetail.map(item => this.catalogProjects.push(item));
+  }
+
 
   moreDetail(id:number){
     this.router.navigate(['/Details',id])

@@ -2,7 +2,7 @@
     <button (click)="gitHubLink()" ><i class="ri-github-line"></i> <span>GitHub</span> </button>
     <app-project-card  *ngFor="let p of catalogProjects" 
         [id]="p.id"
-        [imageCoverCard]="p.image"    
+        [imageCoverCard]="p.images.firstImage"    
         (detail)="moreDetail(p.id)"
     />
 </div>

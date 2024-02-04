@@ -15,10 +15,11 @@ export class ProjectCardComponent implements OnInit {
   ngOnInit(): void {
     const tl = gsap.timeline({
       scrollTrigger:{
-        trigger:'.project_card',
+        trigger:'.projects_catalog',
         start:'-20% center',
-        end:'bottom center',
-        scrub:true
+        end:'center center',
+        scrub:true,
+        markers:true
       }
     })
 
@@ -31,7 +32,8 @@ export class ProjectCardComponent implements OnInit {
       stagger:0.2,
       duration:.5,
       opacity:1,
-      y:0
+      y:0,
+
     })
 
   }
