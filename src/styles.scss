@@ -13,6 +13,7 @@
 
     --cursorLogo:rgba(255,255,255,0.1);
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
@@ -27,7 +28,7 @@
 }
 body{
     background-color: var(--Silver);
-   
+    font-family: 'Farsan', cursive;
     &::-webkit-scrollbar{
         display: none;
     }
@@ -51,11 +52,14 @@ h4{
     color: var(--White);
 }
 p{
-    font-family: 'Farsan', cursive;
     color: var(--White);
 }
 
 a{
     text-decoration: none;
     font-family: 'Buda', serif;
+}
+span{
+    color: var(--Silver);
+    font-size: 18px;
 }

@@ -3,35 +3,14 @@
     width: 5px;
     border-radius: 50%;
     background-color: var(--cursorPrimary);
-    &.hghtlightImage{
-        height: 0px;
-        width: 0px;
-        border: 0px ;
-    }
 
-    &.footerHightlight{
-        background-color: var(--White);
-    }
 }
 .cursor_outline{
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border: 1px solid var(--cursorPrimary);
-    
-    &.hghtlightImage{
-        height: 30px;
-        width: 30px;
-        border: 0px ;
-      background-color: var(--cursorH2);
-    }
 
-    &.footerHightlight{
-        border: 1px solid var(--White);
-    }
-    &.logoHightlight{
-        background-color: var(--cursorLogo);
-    }
 }
 .cursor_dot, .cursor_outline{
     position: fixed;

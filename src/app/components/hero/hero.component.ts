@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
-
+import { Component,Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-
+  @Input() projectName!:string;
+  @Input() description!:string;
+  @Input() demoLink!:string;
+  @Input() repository!:string;
+  @Input() techs!:string;
+  @Input() firstImage!:string;
+  @Input() secondImage!:string;
+  @Input() thirdImage!:string;
+  
+  
 }

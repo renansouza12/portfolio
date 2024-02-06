@@ -5,7 +5,7 @@ export type Projects = {
     images:{
         firstImage:string,
         secondImage:string,
-        thirdtImage:string,
+        thirdImage:string,
     },
     website:string,
     repository:string,

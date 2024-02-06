@@ -1,22 +1,33 @@
 <div class="hero">
 
     <div class="informations">
-        <h2>Project Name</h2>
+        <h2>{{projectName}}</h2>
 
         <div class="description">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!</p>
+            <span>{{description}}</span>
         </div>
 
-        <a href="#">Visit the website</a>
+        <a href={{demoLink}}>Visit the website</a>
 
         <div class="repository">
-            <p>repository</p>
-            <p>...</p>
+            <a href={{repository}}>Repository</a>
         </div>
 
         <div class="technologies">
             <p>Techs</p>
-            <span>Angular</span>
+            <span>{{techs}}</span>
         </div>
     </div>
+    <div class="project_images">
+            <div class="image">
+                <img src={{firstImage}} alt="">
+            </div>
+            <div class="image">
+                <img src="{{secondImage}}" alt="">
+            </div>
+            <div class="image">
+                <img src="{{thirdImage}}" alt="">
+            </div>
+    </div>
+      <button  routerLink="/Projects">Back To Projects</button>
 </div>

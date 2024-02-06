@@ -19,7 +19,6 @@ export class ProjectCardComponent implements OnInit {
         start:'-20% center',
         end:'center center',
         scrub:true,
-        markers:true
       }
     })
 

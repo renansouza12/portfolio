@@ -18,19 +18,6 @@ export class CursorComponent implements OnInit{
     gsap.set(follower,{xPercent:-50,yPercent:-50});
 
 
-    const images = document.querySelectorAll('img');
-    images.forEach(image => cursorHoverEffect(image,'mouseenter','hghtlightImage'));
-    images.forEach(image => cursorHoverEffect(image,'mouseleave','hghtlightImage'));
-
-    // const footerComponent = document.querySelector('footer');
-    // cursorHoverEffect(footerComponent,'mouseenter','footerHightlight');
-    // cursorHoverEffect(footerComponent,'mouseleave','footerHightlight');
-
-    const logo = document.querySelector('.logo');
-    cursorHoverEffect(logo,'mouseenter','logoHightlight');
-    cursorHoverEffect(logo,'mouseleave','logoHightlight');
-
-
     function cursorHoverEffect(tag:any,action:any, className:any){
       tag.addEventListener(action, () => {
         dot?.classList.toggle(className);
