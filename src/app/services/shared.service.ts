@@ -53,8 +53,8 @@ export class SharedService {
       'description':"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!",
       images:{
         firstImage:"../../../assets/images/quiz-image.png",
-        secondImage:"",
-        thirdImage:""
+        secondImage:"../../../assets/images/quiz-image1.avif",
+        thirdImage:"../../../assets/images/quiz-image2.avif"
       },
       website:'https://quiz-pink-delta.vercel.app/',
       repository:'https://github.com/renansouza12/quiz',
