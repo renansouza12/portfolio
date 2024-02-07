@@ -10,7 +10,7 @@ export class SharedService {
     {
       'id':1,
       'name':"Keytap",
-      'description':"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!",
+      'description':"A straightforward website showcasing keyboards and keyboard keys, allowing users to effortlessly add items to the cart and adjust quantities as needed.",
       images:{
         firstImage:"../../../assets/images/keytap-image.png",
         secondImage:"../../../assets/images/keytap-image1.png",
@@ -24,7 +24,7 @@ export class SharedService {
     {
       'id':2,
       'name':"Fuyu",
-      'description':"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!",
+      'description':"A captivating landing page dedicated to the Y-3 shoe, skillfully crafted with Angular and GreenSock animations, ensuring a seamless and visually dynamic experience across all devices with responsive design.",
       images:{
         firstImage:"../../../assets/images/fuyu-image.png",
         secondImage:"../../../assets/images/fuyu-image1.avif",
@@ -37,7 +37,7 @@ export class SharedService {
     {
       'id':3,
       'name':"Card Details",
-      'description':"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!",
+      'description':"An interactive card details form where you can effortlessly modify the cardholder's name, card number, birthdate, and CVC for a personalized and secure input experience.",
       images:{
         firstImage:"../../../assets/images/cardDetails-image.png",
         secondImage:"../../../assets/images/cardDetails-image1.avif",
@@ -50,7 +50,7 @@ export class SharedService {
     {
       'id':4,
       'name':"Quiz",
-      'description':"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!",
+      'description':"A dynamic 'Discover Personality Type' quiz consisting of five questions, each generating four options dynamically to provide a personalized and engaging experience for users.",
       images:{
         firstImage:"../../../assets/images/quiz-image.png",
         secondImage:"../../../assets/images/quiz-image1.avif",
@@ -63,7 +63,7 @@ export class SharedService {
     {
       'id':5,
       'name':"Decoder",
-      'description':"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eveniet a iusto ex voluptas aliquam autem sequi laborum facilis voluptatibus!",
+      'description':"An application for encrypting and decrypting texts, where the letter 'e' is converted to 'enter,' 'i' to 'imes,' 'a' to 'ai,' 'o' to 'ober,' and 'u' to 'ufat'. Additionally, the card features options to increase, decrease, minimize, and close, with the removal of the skew effect for a more versatile and user-friendly interface.",
       images:{
         firstImage:"../../../assets/images/decoder-image.png",
         secondImage:"../../../assets/images/decoder-image1.avif",
