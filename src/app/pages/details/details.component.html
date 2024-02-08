@@ -1,12 +1,6 @@
 <app-hero
     *ngFor="let p of projectSelected"
     [projectName]="p.name"
-    [description]="p.description"
-    [demoLink]="p.website"
-    [repository]="p.repository"
-    [techs]="p.techs"
     [firstImage]="p.images.firstImage"
-    [secondImage]="p.images.secondImage"
-    [thirdImage]="p.images.thirdImage"
 />
 <app-cursor/>   

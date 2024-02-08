@@ -31,8 +31,6 @@ export class DetailsComponent {
         this.projectSelected.push(this.showDetails);
       }
     })
-    
-    
   }
 
 
