@@ -25,6 +25,13 @@
                 text-align: center;
             }
         }
+        .informations{
+            flex-direction: column-reverse;
+            text-align: center;
+            img{
+                width: 90vw;
+            }
+        }
         button{
             bottom: 10%;
         }
