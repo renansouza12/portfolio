@@ -8,5 +8,9 @@
 <app-showcase
     *ngFor="let p of projectSelected"
     [secondImage]="p.images.secondImage"
+    [thirdImage]="p.images.thirdImage"
     [description]="p.description"
+    [demoLink]="p.website"
+    [repository]="p.repository"
+    [techs]="p.techs"
 />

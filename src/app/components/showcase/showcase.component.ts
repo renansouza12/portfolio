@@ -1,11 +1,12 @@
 import { Component,Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './showcase.component.html',
-  styleUrl: './showcase.component.scss'
+  styleUrls: ['./showcase.component.scss','showcase.responsive.component.scss']
 })
 export class ShowcaseComponent {
   @Input() description!:string;
