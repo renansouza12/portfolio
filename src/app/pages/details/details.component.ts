@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeroComponent } from 'src/app/components/hero/hero.component';
 import { Projects } from 'src/app/models/projects.model';
@@ -16,7 +16,7 @@ import { CursorComponent } from 'src/app/ui/cursor/cursor.component';
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
 })
-export class DetailsComponent {
+export class DetailsComponent  {
 
   projectSelected: Projects[] = []
 
@@ -32,6 +32,6 @@ export class DetailsComponent {
       }
     })
   }
-
+ 
 
 }

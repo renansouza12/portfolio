@@ -1,6 +1,6 @@
 .showcase{
     height: 100%;
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/03d41a34690819.56d9c47196f86.jpg') center/cover;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/18b08a64733723.5adc63c7d7914.jpg') center/cover;
     background-attachment: fixed;
 
     .showcase_description{
@@ -28,7 +28,7 @@
         }
     }    
     .informations{
-        height: 100vh;
+        height: 110vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,9 +80,9 @@
         }
     }
     button{
-        position:   fixed;
+        position: fixed;
         left: 50%;
-        bottom: 0;
+        bottom: 0%;
         transform: translate(-50%,-50%);
         text-transform: uppercase;
         border: 1px solid rgba(7, 7, 7, 0.15);
