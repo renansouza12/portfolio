@@ -64,7 +64,7 @@ export class SharedService {
     {
       'id':5,
       'name':"Decoder",
-      'description':"An application for encrypting and decrypting texts, where the letter 'e' is converted to 'enter,' 'i' to 'imes,' 'a' to 'ai,' 'o' to 'ober,' and 'u' to 'ufat'. Additionally, the card features options to increase, decrease, minimize, and close, with the removal of the skew effect for a more versatile and user-friendly interface.",
+      'description':"An application for encrypting and decrypting texts, where the letter 'e' is converted to 'enter,' 'i' to 'imes,' 'a' to 'ai,' 'o' to 'ober,' and 'u' to 'ufat'.",
       images:{
         firstImage:"../../../assets/images/decoder-image.png",
         secondImage:"../../../assets/images/decoder-image1.avif",

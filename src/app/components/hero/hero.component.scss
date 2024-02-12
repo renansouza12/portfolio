@@ -11,15 +11,25 @@
         font-size: 10vw;
         font-weight: 100;
         z-index: 10;
+        animation: appear 3s ease-in-out;
     }
     .main_image{
         height: 70vh;
         width: 70vw;
         transform: translateY(-50px);
+        animation: appear 3s ease-in-out;
         img{
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
+    }
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }

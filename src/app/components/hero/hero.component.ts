@@ -7,8 +7,8 @@ import { SharedService } from 'src/app/services/shared.service';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
 
+gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-hero',
   standalone: true,
@@ -16,7 +16,7 @@ import SplitType from 'split-type';
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss','hero.responsive.component.scss']
 })
-export class HeroComponent implements OnInit {
+export class HeroComponent  {
   @Input() projectName!:string;
   @Input() firstImage!:string;
 
@@ -34,19 +34,5 @@ export class HeroComponent implements OnInit {
       }
     })
   }
-  ngOnInit(): void {
-    this.heroAnimation();
-  }
-  private heroAnimation():void{
-    gsap.to('.hero',{
-      backgroundColor:'#F1F1F1',
-      scrollTrigger:{
-        trigger:".hero",
-        start:"20% top",
-        end:"bottom center",
-        scrub:1,
-        markers:true
-      }
-    })
-  }
+
 }

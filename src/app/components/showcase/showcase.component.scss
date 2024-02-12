@@ -1,6 +1,6 @@
 .showcase{
     height: 100%;
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/18b08a64733723.5adc63c7d7914.jpg') center/cover;
+    background: url('../../../assets/images/bg-showcase.png') center/cover;
     background-attachment: fixed;
 
     .showcase_description{
@@ -19,8 +19,8 @@
         p{
             position: absolute;
             width: 20%;
-            color: var(--Black);
-            font-size: 2vw;
+            color: var(--White);
+            font-size: 1.5vw;
             transform: translate(-40px,100px);
             text-align: justify;
             top: 0%;
@@ -85,11 +85,11 @@
         bottom: 0%;
         transform: translate(-50%,-50%);
         text-transform: uppercase;
-        border: 1px solid rgba(7, 7, 7, 0.15);
+        border: 1px solid rgba(103, 102, 102, 0.15);
         background-color: transparent;
         font-size: 10px;
         font-weight: 100;
-        color: var(--Black);
+        color: var(--White);
         padding: 1rem 2rem;
         transition: 1s;
             &::after{
@@ -97,7 +97,7 @@
                 content: "";
                 height: 0%;
                 width: 0%;
-                background: rgba(24, 24, 24, 0.1);
+                background: rgba(111, 110, 110, 0.1);
                 -webkit-backdrop-filter: blur(2px);
                 backdrop-filter: blur(2px);
                 top: 50%;
