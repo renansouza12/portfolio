@@ -1,0 +1,22 @@
+.filter{
+    border: 1px solid var(--White);
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem ;
+    position: relative;
+
+    button{
+        font-family: 'Farsan', cursive;
+        background-color: transparent;
+        border: none;
+        color: var(--White);
+        font-size: 20px;
+        transition: 1s;
+     
+        &:hover{
+            color: var(--Blakck);
+
+        }
+    }
+}

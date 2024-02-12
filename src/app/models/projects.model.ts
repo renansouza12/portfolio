@@ -10,5 +10,5 @@ export type Projects = {
     website:string,
     repository:string,
     techs:string
-
+    level:string
 }

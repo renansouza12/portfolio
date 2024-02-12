@@ -19,8 +19,8 @@ export class SharedService {
       },
       website:'https://keytap.vercel.app/',
       repository:'https://github.com/renansouza12/keytap',
-      techs:'Angular TypeScript Scss'
-      
+      techs:'Angular TypeScript Scss',
+      level:'Intermediary'
     },
     {
       'id':2,
@@ -33,7 +33,8 @@ export class SharedService {
       },
       website:'https://fuyu-landing-page.vercel.app/',
       repository:'https://github.com/renansouza12/FUYU-landing-page',
-      techs:'Angular TypeScript Scss'
+      techs:'Angular TypeScript Scss',
+      level:'Newba'
     },
     {
       'id':3,
@@ -46,7 +47,8 @@ export class SharedService {
       },
       website:'https://gregarious-crumble-17bc55.netlify.app/',
       repository:'https://github.com/renansouza12/card-details-form',
-      techs:'Angular TypeScript Scss'
+      techs:'Angular TypeScript Scss',
+      level:'Intermediary'
     },
     {
       'id':4,
@@ -59,7 +61,8 @@ export class SharedService {
       },
       website:'https://quiz-pink-delta.vercel.app/',
       repository:'https://github.com/renansouza12/quiz',
-      techs:'Angular TypeScript Scss'
+      techs:'Angular TypeScript Scss',
+      level:'Newba'
     },
     {
       'id':5,
@@ -72,7 +75,8 @@ export class SharedService {
       },
       website:'https://decoder-alura-desafio.vercel.app/',
       repository:'https://github.com/renansouza12/decoder-alura-desafio',
-      techs:'Html css javascript'
+      techs:'Html css javascript',
+      level:'Newba'
     },
   ]
 }
