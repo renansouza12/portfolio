@@ -70,8 +70,8 @@ export class SharedService {
         secondImage:"../../../assets/images/decoder-image1.avif",
         thirdImage:"../../../assets/images/decoder-image2.avif"
       },
-      website:'https://renansouza12.github.io/alura-portfolio-desafio/',
-      repository:'https://github.com/renansouza12/alura-portfolio-desafio',
+      website:'https://decoder-alura-desafio.vercel.app/',
+      repository:'https://github.com/renansouza12/decoder-alura-desafio',
       techs:'Html css javascript'
     },
   ]
