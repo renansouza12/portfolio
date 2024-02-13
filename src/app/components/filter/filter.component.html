@@ -1,8 +1,10 @@
-<div class="filter">
-    <button   (click)="handleButtonClick(1)" class="btnOption">Newba</button>
-    <button  (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
-    <button  (click)="handleButtonClick(3)" class="btnOption">Pro</button>
+<div class="filter_container">
+    <div class="filter">
+        <button   (click)="handleButtonClick(1)" class="btnOption">Newba</button>
+        <button  (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
+        <button  (click)="handleButtonClick(3)" class="btnOption">Pro</button>
+    </div>
 </div>
-<div class="messageOptionPro">
-    <h1>༼ つ ◕_◕ ༽つ</h1>
+<div *ngIf="message" class="messageOptionPro">
+    <h3>Studying for this moment</h3>
 </div>

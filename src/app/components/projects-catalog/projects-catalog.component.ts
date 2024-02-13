@@ -14,12 +14,12 @@ import { FilterComponent } from '../filter/filter.component';
   styleUrl: './projects-catalog.component.scss'
 })
 export class ProjectsCatalogComponent {
+  catalogProjects:Projects[]= [];
+  showMessage:boolean = false;
+
   gitHubLink(){
     window.location.href='https://github.com/renansouza12'; 
   }
-
-  catalogProjects:Projects[]= [];
-
 
   constructor(private router:Router,private shared:SharedService){
     this.shared.projectDetail.map(item => this.catalogProjects.push(item));
@@ -30,12 +30,16 @@ export class ProjectsCatalogComponent {
   }
   filterOption(option: number): void {
     let filteredProjects = [...this.shared.projectDetail];
-
+    this.showMessage = false;
     if(option === 1){
       filteredProjects = filteredProjects.filter((item) => item.level === 'Newba');
     }
     if(option === 2){
       filteredProjects = filteredProjects.filter((item) => item.level === 'Intermediary');
+    }
+    if(option === 3){
+      filteredProjects = [];
+      this.showMessage = true;
     }
     this.catalogProjects = filteredProjects;
     console.log(this.catalogProjects);
