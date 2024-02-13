@@ -17,12 +17,41 @@
             color: var(--White);
             font-size: 20px;
             transition: 1s;
-         
-            &:hover{
-                color: var(--Blakck);
-    
+            &::after{
+                position: absolute;
+                content: '';
+                height: 0px;
+                width: 0px;
+                border-radius: 50%;
+                background-color: var(--White);
+                transition: 0.4s;
+               bottom: 10%;
             }
-        }
+
+            &.newba{
+                &::after{
+                    height: 5px;
+                    width: 5px;
+                    transform: translateX(-25px);
+                }
+            }
+            
+            &.inter{
+                &::after{
+                    height: 5px;
+                    width: 5px;
+                    transform: translate(-40px,-30px);
+                }
+            }
+             
+            &.pro{
+                &::after{
+                    height: 5px;
+                    width: 5px;
+                    transform: translateX(-13px);
+                }
+            }
+        }   
     }
 }
 

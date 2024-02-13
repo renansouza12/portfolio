@@ -42,6 +42,5 @@ export class ProjectsCatalogComponent {
       this.showMessage = true;
     }
     this.catalogProjects = filteredProjects;
-    console.log(this.catalogProjects);
   }
 }

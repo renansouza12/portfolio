@@ -1,8 +1,8 @@
 <div class="filter_container">
     <div class="filter">
-        <button   (click)="handleButtonClick(1)" class="btnOption">Newba</button>
-        <button  (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
-        <button  (click)="handleButtonClick(3)" class="btnOption">Pro</button>
+        <button [ngClass]="firstButton" (click)="handleButtonClick(1)" class="btnOption">Newba</button>
+        <button [ngClass]="secondButton"  (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
+        <button [ngClass]="thirdButton"   (click)="handleButtonClick(3)" class="btnOption">Pro</button>
     </div>
 </div>
 <div *ngIf="message" class="messageOptionPro">
