@@ -14,7 +14,7 @@
         padding: 0.8rem 2rem;
         display: flex;
         align-items: center;
-        gap: 2rem ;
+        gap: 1rem ;
         position: relative;
         margin: 1rem 0;
         z-index: 200;
@@ -25,9 +25,8 @@
             color: var(--White);
             font-size: 20px;
             transition: 1s;
-            padding: 0 0.5rem;
             &:nth-child(1){
-                padding: 0 1rem;
+                padding: 0 1rem 0 0;
                 border-right: 1px solid var(--White);
 
             }
@@ -47,7 +46,7 @@
                     height: 1px;
                     width: 15px;
                     border-radius: 1rem;
-                    transform: translate(-12px,-35px);
+                    transform: translateX(-17px);
                 }
             }
             &.newba{
