@@ -31,6 +31,9 @@ export class ProjectsCatalogComponent {
   filterOption(option: number): void {
     let filteredProjects = [...this.shared.projectDetail];
     this.showMessage = false;
+    if(option === 0){
+      filteredProjects;
+    }
     if(option === 1){
       filteredProjects = filteredProjects.filter((item) => item.level === 'Newba');
     }

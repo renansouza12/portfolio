@@ -1,5 +1,6 @@
 <div class="filter_container">
     <div class="filter">
+        <button [ngClass]="allButton" (click)="handleButtonClick(0)" class="btnOption">All</button>
         <button [ngClass]="firstButton" (click)="handleButtonClick(1)" class="btnOption">Newba</button>
         <button [ngClass]="secondButton"  (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
         <button [ngClass]="thirdButton"   (click)="handleButtonClick(3)" class="btnOption">Pro</button>
