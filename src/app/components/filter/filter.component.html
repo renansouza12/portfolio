@@ -1,15 +1,15 @@
 <div class="filter_container">
     <div class="filter">
-        <button [ngClass]="allButton" (click)="handleButtonClick(0)" class="btnOption">All</button>
-        <button [ngClass]="firstButton" (click)="handleButtonClick(1)" class="btnOption">Newba</button>
-        <button [ngClass]="secondButton"  (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
-        <button [ngClass]="thirdButton"   (click)="handleButtonClick(3)" class="btnOption">Pro</button>
+      <button [ngClass]="{'all': activeButton === 'all'}" (click)="handleButtonClick(0)" class="btnOption">All</button>
+      <button [ngClass]="{'newba': activeButton === 'newba'}" (click)="handleButtonClick(1)" class="btnOption">Newba</button>
+      <button [ngClass]="{'inter': activeButton === 'inter'}" (click)="handleButtonClick(2)" class="btnOption">Intermediary</button>
+      <button [ngClass]="{'pro': activeButton === 'pro'}" (click)="handleButtonClick(3)" class="btnOption">Pro</button>
     </div>
-</div>
-<div *ngIf="message" class="messageOptionPro">
-
-    <img src="../../../assets/animatedImages/proGif.gif" alt=" depicts a small, moss-covered temple nestled amidst a lush green forest.">
+  </div>
+  <div *ngIf="message" class="messageOptionPro">
+    <img src="../../../assets/animatedImages/proGif.gif" alt="Depicts a small, moss-covered temple nestled amidst a lush green forest.">
     <h3>
-        Empty for now, but I'm gearing up to add some complex projects soon!
+      Empty for now, but I'm gearing up to add some complex projects soon!
     </h3>
-</div>
+  </div>
+  

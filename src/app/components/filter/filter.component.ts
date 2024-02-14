@@ -10,40 +10,32 @@ import { Component, Output,EventEmitter,Input } from '@angular/core';
 })
 export class FilterComponent{
   @Output() options = new EventEmitter<number>();
-  @Input() message:boolean = false;
-  
-  allButton!:string;
-  firstButton!:string;
-  secondButton!:string;
-  thirdButton!:string;
+  @Input() message: boolean = false;
 
-  handleButtonClick(btnNumber:number):void{
+  activeButton: string = '';
+
+  handleButtonClick(btnNumber: number): void {
     this.options.emit(btnNumber);
-    this.allButton = 'all';
-    if(btnNumber === 0){
-      this.allButton = 'all';
-      this.firstButton = '';
-      this.secondButton = '';
-      this.thirdButton = '';
+    this.setActiveButton(btnNumber);
+  }
+
+  private setActiveButton(btnNumber: number): void {
+    this.activeButton = '';
+    switch (btnNumber) {
+      case 0:
+        this.activeButton = 'all';
+        break;
+      case 1:
+        this.activeButton = 'newba';
+        break;
+      case 2:
+        this.activeButton = 'inter';
+        break;
+      case 3:
+        this.activeButton = 'pro';
+        break;
+      default:
+        break;
     }
-    if(btnNumber === 1){
-      this.allButton = '';
-      this.firstButton = 'newba';
-      this.secondButton = '';
-      this.thirdButton = '';
-    }
-    if(btnNumber === 2){
-      this.allButton = '';
-      this.firstButton = '';
-      this.secondButton = 'inter';
-      this.thirdButton = '';
-    }
-    if(btnNumber === 3){
-      this.allButton = '';
-      this.firstButton = '';
-      this.secondButton = '';
-      this.thirdButton = 'pro';
-    }
-  
   }
 }
