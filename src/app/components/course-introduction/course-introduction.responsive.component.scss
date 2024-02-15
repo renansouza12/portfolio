@@ -1,0 +1,17 @@
+@media (max-width:1000px){
+    .course_introduction{
+        p{
+            width: 40%;
+        }
+    }
+}
+@media (max-width:425px){
+    .course_introduction{
+        .course_title{
+            font-size: 15vw;
+        }
+        p{
+            width: 70%;
+        }
+    }
+}

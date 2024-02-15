@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './course-introduction.component.html',
-  styleUrl: './course-introduction.component.scss'
+  styleUrls: ['./course-introduction.component.scss','course-introduction.responsive.component.scss']
 })
 export class CourseIntroductionComponent {
-
+  
 }
