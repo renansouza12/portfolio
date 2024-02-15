@@ -22,18 +22,17 @@
         display: flex;
         justify-content: space-between;
         padding: 0 1rem 0 1rem;
-        p,a{
-            transition: 1s;
-        }
         p{
             width: fit-content;
+            transition: 1s;
+
+            &:hover{
+                text-shadow:  #FFF 0px 0px 15px;
+            }
         }
         a{
             color: var(--White);
         }
-        a:hover , p:hover{
-            text-shadow:  #FFF 0px 0px 15px;
-            letter-spacing: 1px;
-        }
+    
     }
 }
