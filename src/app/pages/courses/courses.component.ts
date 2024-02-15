@@ -5,11 +5,12 @@ import { CursorComponent } from 'src/app/ui/cursor/cursor.component';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import { CourseCatalogComponent } from 'src/app/components/course-catalog/course-catalog.component';
 
 @Component({
   selector: 'app-courses',
   standalone: true,
-  imports: [CourseIntroductionComponent,CursorComponent],
+  imports: [CourseIntroductionComponent,CursorComponent,CourseCatalogComponent],
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.scss'
 })

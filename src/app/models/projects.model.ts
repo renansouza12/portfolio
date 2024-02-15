@@ -12,3 +12,6 @@ export type Projects = {
     techs:string
     level:string
 }
+export type Certificates ={
+    name:string
+}
