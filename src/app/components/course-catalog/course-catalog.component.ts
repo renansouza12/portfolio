@@ -13,37 +13,37 @@ export class CourseCatalogComponent{
   
   certificates:Certificates[]=[
     {
-      name:"index"
+      name:"Santander Bootcamp 2023 - Fullstack Java+Angular"
+    },
+    {
+      name:""
+    },
+    {
+      name:""
+    },
+    {
+      name:""
+    },
+    {
+      name:"Google Data Analytics (PT)"
+    },
+    {
+      name:"Desenvolvimento Frontend com Angular"
+    },
+    {
+      name:""
+    },
+    {
+      name:"EF SET Certifcate"
     },
     {
       name:"index"
     },
     {
-      name:"index"
+      name:""
     },
     {
-      name:"index"
-    },
-    {
-      name:"index"
-    },
-    {
-      name:"index"
-    },
-    {
-      name:"index"
-    },
-    {
-      name:"index"
-    },
-    {
-      name:"index"
-    },
-    {
-      name:"index"
-    },
-    {
-      name:"index"
+      name:"IA generativa com AWS Trybe + AWS"
     },
     {
       name:"index"
@@ -61,28 +61,44 @@ export class CourseCatalogComponent{
 
 
   private updateCursorOutline(action: 'add' | 'remove', i: number): void {
-    const firstImage = document.querySelector(".first_image");
-    const secondImage = document.querySelector(".second_image");
 
-    if (i === 4) {
-      firstImage?.classList[action]('active');
-      secondImage?.classList.remove('active');
-    } else if (i === 7) {
-      secondImage?.classList[action]('active');
-      firstImage?.classList.remove('active');
+    const certificateAngularJava = document.querySelector(".first_image");
+    const certificaeAngula = document.querySelector(".second_image");
+    const certificateEF = document.querySelector(".third_image");
+    const certificateData = document.querySelector(".fourth_image");
+    const certificateTrybe = document.querySelector(".fifth_image");
+    
+    switch(i){
+      case 2:
+        certificateAngularJava?.classList[action]('active');
+        break;
+      case 6:
+        certificaeAngula?.classList[action]('active');
+        break;
+      case 7:
+        certificateEF?.classList[action]('active');
+        break;
+        case 4:
+          certificateData?.classList[action]('active');
+          break;
+          case 10:
+            certificateTrybe?.classList[action]('active');
+          break;
+        default:
+        break;
+
     }
+  
   }
 
   mouseEnter(i: number): void {
-    if (i === 4 || i === 7) {
+    if (i === 2 || i === 4 || i === 6|| i === 7 || i === 10) {
       this.updateCursorOutline('add', i);
     }
   }
 
   mouseLeave(i: number): void {
-    console.log('leaved');
-    
-    if (i === 4 || i === 7) {
+    if (i === 2 || i === 4 || i === 6|| i === 7 || i === 10) {
       this.updateCursorOutline('remove', i);
     }
   }

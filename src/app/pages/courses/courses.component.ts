@@ -3,7 +3,6 @@ import { CourseIntroductionComponent } from 'src/app/components/course-introduct
 import { CursorComponent } from 'src/app/ui/cursor/cursor.component';
 
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import { CourseCatalogComponent } from 'src/app/components/course-catalog/course-catalog.component';
 
