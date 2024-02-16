@@ -26,6 +26,7 @@
     .first_image,.second_image,.third_image,.fourth_image,.fifth_image{
         &.active{
             display: block;
+            animation: certificateImage .6s forwards;
         }
     }
 
@@ -40,6 +41,15 @@
 }
 
 
+@keyframes certificateImage {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @media (max-width:425px) {
 
     .cursor_dot, .cursor_outline{
@@ -47,5 +57,4 @@
     }
     
 }
-
 
