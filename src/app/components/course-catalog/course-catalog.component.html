@@ -1,6 +1,6 @@
 <div class="course_catalog">
     <div class="certificates">
-        <div class="box" (click)="boxCard()"  *ngFor="let certificate of certificates; index as i">
+        <div class="box" (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)"   *ngFor="let certificate of certificates; index as i">
                 <p>{{certificate.name}}</p>
             </div>
     </div>
