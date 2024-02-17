@@ -1,0 +1,38 @@
+@media (max-width:1024px){
+    .course_catalog{
+        .certificate_image{
+            bottom: -140%;
+            width: 60vw;
+        }
+    }
+}
+@media (max-width:768px){
+    .course_catalog{
+        .certificate_image{
+            width: 70vw;
+            .close_certificate_image{
+                .line{
+                    &:nth-child(1){
+                        transform:  rotate(42deg);   
+                    }
+                    &:nth-child(2){
+                        transform:  translateX(100px);
+                        opacity: 0;   
+                    }
+                    &:nth-child(3){
+                        transform:  rotate(-42deg) translate(10px, -11px);   
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:425px){
+    .course_catalog{
+        .certificate_image{
+            bottom: -120%;
+            height: 60vh;
+            width: 80vw;
+        }
+    }
+}

@@ -7,7 +7,7 @@ import { Certificates } from 'src/app/models/projects.model';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './course-catalog.component.html',
-  styleUrl: './course-catalog.component.scss'
+  styleUrls: ['./course-catalog.component.scss','course-catalog.responsive.component.scss']
 })
 export class CourseCatalogComponent{
   
@@ -50,7 +50,7 @@ export class CourseCatalogComponent{
     {
       id:8,
       name:"EF SET Certifcate",
-      image:""
+      image:"../../../assets/images/certificates-images/fullCertificateEF.png"
     },
     {
       id:9,
@@ -135,19 +135,14 @@ export class CourseCatalogComponent{
   certificateSelected:Certificates[] =[];
   certificateDetails!:string;
 
-  openCertificate(id:number):void{
-    this.certificateDetails ='enable';
-
-    const certificateDetails = this.certificates.forEach(item => {
-      if(item.id === id){
-        this.certificateSelected.push(item); 
-      }
-    })
+  openCertificate(id: number): void {
+    this.certificateSelected = this.certificates.filter(item => item.id === id);
+    this.certificateDetails = 'enable';
   }
 
-  closeCertificate():void{
-    this.certificateSelected =[];
-    this.certificateDetails ='';
+  closeCertificate(): void {
+    this.certificateSelected = [];
+    this.certificateDetails = '';
   }
 
 }
