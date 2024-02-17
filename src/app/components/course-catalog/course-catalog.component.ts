@@ -39,13 +39,13 @@ export class CourseCatalogComponent{
     },
     {
       id:6,
-      name:"Desenvolvimento Frontend com Angular",
+      name:"",
       image:""
     },
     {
       id:7,
-      name:"",
-      image:""
+      name:"Desenvolvimento Frontend com Angular",
+      image:"../../../assets/images/certificates-images/angular.png"
     },
     {
       id:8,
@@ -65,7 +65,7 @@ export class CourseCatalogComponent{
     {
       id:11,
       name:"IA generativa com AWS Trybe + AWS",
-      image:""
+      image:"../../../assets/images/certificates-images/trybe.png"
     },
     {
       id:12,
@@ -93,7 +93,7 @@ export class CourseCatalogComponent{
   private updateCursorOutline(action: 'add' | 'remove', i: number): void {
 
     const certificateAngularJava = document.querySelector(".first_image");
-    const certificaeAngula = document.querySelector(".second_image");
+    const certificateAngula = document.querySelector(".second_image");
     const certificateEF = document.querySelector(".third_image");
     const certificateData = document.querySelector(".fourth_image");
     const certificateTrybe = document.querySelector(".fifth_image");
@@ -103,7 +103,7 @@ export class CourseCatalogComponent{
         certificateAngularJava?.classList[action]('active');
         break;
       case 6:
-        certificaeAngula?.classList[action]('active');
+        certificateAngula?.classList[action]('active');
         break;
       case 7:
         certificateEF?.classList[action]('active');
@@ -136,7 +136,7 @@ export class CourseCatalogComponent{
   certificateDetails!:string;
 
   openCertificate(id: number): void {
-    this.certificateSelected = this.certificates.filter(item => item.id === id);
+    this.certificateSelected = this.certificates.filter(item => item.id === id && item.name != "index");
     this.certificateDetails = 'enable';
   }
 

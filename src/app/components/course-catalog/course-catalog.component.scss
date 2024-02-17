@@ -54,6 +54,16 @@
     width: 50vw;
     display: none;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px; 
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--Grey);
+        border-radius: 1rem; 
+      }
+      
     img{
         object-fit: contain;
         height: fit-content;
@@ -72,8 +82,14 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        background: rgba(1, 1, 1, 0.1);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        padding: 10px;
         .line{
-            height: 2px;
+            height: 1px;
             width: 20px;
             border-radius: 1rem;
             background-color: var(--Black);
@@ -92,14 +108,14 @@
         }
 
         &:hover .line:nth-child(1){
-            transform:  rotate(42deg);   
+            transform:  rotate(42deg) translate(5px, 5px);   
         }
         &:hover .line:nth-child(2){
             transform:  translateX(50px);
             opacity: 0;   
         }
         &:hover .line:nth-child(3){
-            transform:  rotate(-42deg) translate(10px, -11px);   
+            transform:  rotate(-42deg) translate(4px, -4px);   
         }
     }
  }  
