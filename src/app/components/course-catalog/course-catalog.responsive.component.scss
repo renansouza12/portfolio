@@ -10,17 +10,18 @@
     .course_catalog{
         .certificate_image{
             width: 70vw;
+            overflow: hidden;
             .close_certificate_image{
                 .line{
                     &:nth-child(1){
-                        transform:  rotate(42deg);   
+                        transform:  rotate(42deg) translate(5px, 5px);   
                     }
                     &:nth-child(2){
-                        transform:  translateX(100px);
+                        transform:  translateX(50px);
                         opacity: 0;   
                     }
                     &:nth-child(3){
-                        transform:  rotate(-42deg) translate(10px, -11px);   
+                        transform:  rotate(-42deg) translate(4px, -4px);     
                     }
                 }
             }
@@ -32,7 +33,7 @@
         .certificate_image{
             bottom: -120%;
             height: 60vh;
-            width: 80vw;
+            width: 98vw;
         }
     }
 }

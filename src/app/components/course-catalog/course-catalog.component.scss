@@ -54,7 +54,7 @@
     width: 50vw;
     display: none;
     overflow-y: auto;
-
+    animation: appear 1s forwards;
     &::-webkit-scrollbar {
         width: 5px; 
       }
@@ -87,7 +87,7 @@
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         border-radius: 5px;
-        padding: 10px;
+        padding: 7px;
         .line{
             height: 1px;
             width: 20px;
@@ -119,4 +119,12 @@
         }
     }
  }  
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
