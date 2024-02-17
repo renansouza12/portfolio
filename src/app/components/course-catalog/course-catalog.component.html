@@ -1,7 +1,17 @@
 <div class="course_catalog">
     <div class="certificates">
-        <div class="box" (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)"   *ngFor="let certificate of certificates; index as i">
+        <div class="box"  (click)="openCertificate(certificate.id)" (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)"   *ngFor="let certificate of certificates; index as i">
                 <p>{{certificate.name}}</p>
             </div>
     </div>
+
+    <div [ngClass]="certificateDetails"  class="certificate_image" *ngFor="let item of certificateSelected">
+        <img src={{item.image}} />
+
+        <div (click)="closeCertificate()" class="close_certificate_image">
+            <div class="line"></div>
+            <div class="line"></div>
+           </div>
+    </div>
+   
 </div>

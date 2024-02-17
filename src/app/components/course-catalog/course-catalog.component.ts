@@ -13,49 +13,79 @@ export class CourseCatalogComponent{
   
   certificates:Certificates[]=[
     {
-      name:"Santander Bootcamp 2023 - Fullstack Java+Angular"
+      id:1,
+      name:"",
+      image:""
     },
     {
-      name:""
+      id:2,
+      name:"",
+      image:""
     },
     {
-      name:""
+      id:3,
+      name:"Santander Bootcamp 2023 - Fullstack Java+Angular",
+      image:"../../../assets/images/certificates-images/angularJava.png"
     },
     {
-      name:""
+      id:4,
+      name:"",
+      image:""
     },
     {
-      name:"Google Data Analytics (PT)"
+      id:5,
+      name:"Google Data Analytics (PT)",
+      image:"../../../assets/images/certificates-images/dataAnalise.png"
     },
     {
-      name:"Desenvolvimento Frontend com Angular"
+      id:6,
+      name:"Desenvolvimento Frontend com Angular",
+      image:""
     },
     {
-      name:""
+      id:7,
+      name:"",
+      image:""
     },
     {
-      name:"EF SET Certifcate"
+      id:8,
+      name:"EF SET Certifcate",
+      image:""
     },
     {
-      name:"index"
+      id:9,
+      name:"index",
+      image:""
     },
     {
-      name:""
+      id:10,
+      name:"",
+      image:""
     },
     {
-      name:"IA generativa com AWS Trybe + AWS"
+      id:11,
+      name:"IA generativa com AWS Trybe + AWS",
+      image:""
     },
     {
-      name:"index"
+      id:12,
+      name:"index",
+      image:""
     },
     {
-      name:"index"
+      id:13,
+      name:"index",
+      image:""
     },
     {
-      name:"index"
+      id:14,
+      name:"index",
+      image:""
     },
     {
-      name:"index"
+      id:15,
+      name:"index",
+      image:""
     },
   ]
 
@@ -102,4 +132,22 @@ export class CourseCatalogComponent{
       this.updateCursorOutline('remove', i);
     }
   }
+  certificateSelected:Certificates[] =[];
+  certificateDetails!:string;
+
+  openCertificate(id:number):void{
+    this.certificateDetails ='enable';
+
+    const certificateDetails = this.certificates.forEach(item => {
+      if(item.id === id){
+        this.certificateSelected.push(item); 
+      }
+    })
+  }
+
+  closeCertificate():void{
+    this.certificateSelected =[];
+    this.certificateDetails ='';
+  }
+
 }
