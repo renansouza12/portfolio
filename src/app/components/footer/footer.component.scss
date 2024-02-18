@@ -8,19 +8,32 @@ footer{
         display: grid;
         place-content: center;
         h3{
-            font-size: 30px;
+            font-size: 4vw;
+            font-size: 100;
         }
     }
 
     .footer_img{
         height: 100vh;
         width: 100%;
-        background: url('../../../assets/images/bg/home-bg-footer.jpg') center/cover;
-        background-attachment: fixed;
+
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        position: relative;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
         h2{
             font-size: 15vw;
             font-weight: 100;

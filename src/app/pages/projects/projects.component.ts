@@ -5,6 +5,7 @@ import { ProjectsCatalogComponent } from 'src/app/components/projects-catalog/pr
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FooterComponent } from 'src/app/components/footer/footer.component';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
   imports: [CursorComponent,
             TitleComponent,
             ProjectsCatalogComponent,
+            FooterComponent
           ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
