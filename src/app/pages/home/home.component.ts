@@ -51,7 +51,6 @@ export class HomeComponent implements OnInit{
     this.animateHeader();
     this.animateIntroductionTitle();
     this.animateAboutText();
-    this.animateFooterContent();
   }
 
   private animateIntroduction(): void {
@@ -115,16 +114,4 @@ export class HomeComponent implements OnInit{
     });
   }
 
-  private animateFooterContent(): void {
-    gsap.from('.footer_content', {
-      y: 100,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: 'footer',
-        start: 'top center',
-        end: 'center center',
-        scrub: 1,
-      },
-    });
-  }
 }
