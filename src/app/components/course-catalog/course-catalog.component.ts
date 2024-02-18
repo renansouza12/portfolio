@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Certificates } from 'src/app/models/projects.model';
 
 @Component({
@@ -10,7 +10,7 @@ import { Certificates } from 'src/app/models/projects.model';
   styleUrls: ['./course-catalog.component.scss','course-catalog.responsive.component.scss']
 })
 export class CourseCatalogComponent{
-  
+
   certificates:Certificates[]=[
     {
       id:1,
@@ -144,5 +144,5 @@ export class CourseCatalogComponent{
     this.certificateSelected = [];
     this.certificateDetails = '';
   }
-
+  
 }
