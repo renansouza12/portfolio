@@ -1,63 +1,17 @@
 footer{
-    height: 80vh;
-    width: 100vw;
-    position: relative;
-    background: url('../../../assets/images/bg/bg-footer.png') center/cover; 
-    overflow: hidden;  
+    height: 100vh;
+    background-color: var(--Black);
+    .footer_img{
+        height: 90vh;
+        width: 100%;
+        background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfbdc187528807.658af54defe1b.jpg') center/cover;
+        background-attachment: fixed;
+        filter: grayscale(100%);
+    }
     .footer_content{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        overflow: hidden;
-       h2{
-        font-size: 6vw;
-        font-weight: 100;
-        color: var(--White);
-       }
-
-       .next_page{
-        height: 40vh;
-        width: 90vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        
-        h3,span{
-            font-size: 12vw;
-            transition: 1s;
-        }
-
-        h3{ 
-            transform: translateX(25%);
-            color: var(--Black);
-            span{
-                opacity: 0;
-                color: var(--White);
-                font-size: 100;
-            }
-        }
-        &:hover h3{
-            transform: translateX(0px);
-        }
-        &:hover h3 span{
-            opacity: 1;
-        }
-       }
+        background-color: var(--Black);
+        height: 50vw;
+        display: grid;
+        place-content: center;
     }
-}   
-
-@media (max-width:768px) {
-
-    footer{
-        .footer_content{
-            h2{
-                font-size: 40px;
-                text-align: center;
-            }
-        }
-    }
-    
 }
