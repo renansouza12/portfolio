@@ -1,12 +1,14 @@
 .course_catalog{
-    height: 100vh;
+    height: 100%;
     background-color: var(--Black);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 10rem;
     align-items: center;
 
     .certificates{
-        height: 100%;
+        height: 100vh;
         width: 90%;
         display: grid;
         grid-template-columns: repeat(4,0.2fr);
@@ -119,6 +121,12 @@
         }
     }
  }  
+ .course_image{
+    height: 100vh;
+    width: 100vw;
+    background: url('../../../assets/images/bg/course-bg-footer.jpg') center/cover;
+    background-attachment: fixed;
+ }
 }
 @keyframes appear{
     0%{
