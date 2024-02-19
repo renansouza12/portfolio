@@ -108,8 +108,9 @@ export class HomeComponent implements OnInit{
       scrollTrigger: {
         trigger: '.about',
         start: 'top center',
-        end: 'center center',
+        end: '20% center',
         scrub: 1,
+        markers:true
       },
     });
   }
