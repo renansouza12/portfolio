@@ -1,0 +1,57 @@
+.contact{
+    height: 100vh;
+    background-color: var(--Black);
+    display: grid;
+    place-content: center;
+    .thanks{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        p{
+            letter-spacing: 2px;
+        }
+    }
+    .email{
+       position: relative;
+        padding: 5rem;
+        a{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+            h2{
+                font-size: 10vw;
+                text-transform: uppercase;
+                font-weight: 100;
+                span{
+                    font-size: 10vw;
+                    color: var(--Light-gray);
+                }
+            }
+
+            h3{
+                font-size: 1.8vw;
+            }
+        }
+        &::after,&::before{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 50%;
+            background-color: var(--Light-gray);
+        }
+        &::after{
+            top: 0;
+            left: 0;
+        }
+        &::before{
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .author{
+        width: 60%;
+        font-size: 12px;
+    }
+}
