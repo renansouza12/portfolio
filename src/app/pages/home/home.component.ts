@@ -48,7 +48,6 @@ export class HomeComponent implements OnInit{
     });
 
     this.animateIntroduction();
-    this.animateHeader();
     this.animateIntroductionTitle();
     this.animateAboutText();
   }
@@ -66,17 +65,6 @@ export class HomeComponent implements OnInit{
     });
   }
 
-  private animateHeader(): void {
-    gsap.from('header', {
-      opacity: 0,
-      scrollTrigger: {
-        trigger: '.introduction_title_container',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1,
-      }
-    });
-  }
 
   private animateIntroductionTitle(): void {
     const myText = new SplitType('.introduction_title');

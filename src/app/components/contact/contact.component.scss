@@ -44,14 +44,24 @@
         &::after{
             top: 0;
             left: 0;
+            animation: line 2s forwards;
         }
         &::before{
             bottom: 0;
             right: 0;
+            animation: line 2s forwards;
         }
     }
     .author{
         width: 60%;
         font-size: 12px;
+    }
+}
+@keyframes line {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 50%;
     }
 }
