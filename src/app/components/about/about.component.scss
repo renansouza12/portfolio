@@ -35,6 +35,51 @@
             backdrop-filter: blur(2px);
         }
     }
+
+    .about_informations{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        margin-top: 3rem;
+        h2{
+            font-size: 7vw;
+            font-weight: 100;
+        }
+        p{
+            border: none;
+        }
+        .language{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .tech_container{
+            padding: 1rem 0;
+            border-top:1px solid var(--Grey) ;
+            text-align: center;
+            .technologies{
+                height: 70vh;
+                width: 60vw;
+                gap: 1rem;
+            }
+            .technologies{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    text-transform: uppercase;
+                    border-bottom: 1px solid var(--Light-gray);
+                    font-size: 20px;
+                }
+            }
+        }
+       }
+
     .carousel{
         width: 200%;
         display: flex;

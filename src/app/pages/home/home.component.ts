@@ -50,6 +50,7 @@ export class HomeComponent implements OnInit{
     this.animateIntroduction();
     this.animateIntroductionTitle();
     this.animateAboutText();
+    this.animateTech();
   }
 
   private animateIntroduction(): void {
@@ -97,6 +98,23 @@ export class HomeComponent implements OnInit{
         trigger: '.about',
         start: 'top center',
         end: '20% center',
+        scrub: 1,
+      },
+    });
+  }
+
+  private animateTech(): void {
+   
+
+    gsap.from('.tech', {
+      x:-100,
+      opacity: 0,
+      stagger: 0.3,
+      transition: 0.5,
+      scrollTrigger: {
+        trigger: '.about_informations',
+        start: 'top center',
+        end: 'center center',
         scrub: 1,
       },
     });
