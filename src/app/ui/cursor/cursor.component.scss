@@ -6,10 +6,18 @@
 
 }
 .cursor_outline{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
     border: 1px solid var(--cursorPrimary);
+
+    .inner{
+        border: 1px solid var(--White);
+        width: 110%;
+        height: 110%;
+        border-radius: 2px;
+        animation: rotateAnimation 10s linear infinite;
+    }
 
     .cursor_image{
        display: none;
@@ -35,7 +43,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) rotate(45deg);
     pointer-events: none;
     z-index: 100;
 }
@@ -47,6 +55,20 @@
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
 
