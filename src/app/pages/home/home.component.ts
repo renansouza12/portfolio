@@ -95,9 +95,9 @@ export class HomeComponent implements OnInit{
       stagger: 0.3,
       transition: 0.5,
       scrollTrigger: {
-        trigger: '.about',
-        start: 'top center',
-        end: '20% center',
+        trigger: '.about_text',
+        start: '-20% center',
+        end: 'bottom center',
         scrub: 1,
       },
     });
