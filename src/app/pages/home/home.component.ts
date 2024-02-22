@@ -104,18 +104,45 @@ export class HomeComponent implements OnInit{
   }
 
   private animateTech(): void {
-   
+    const myTextTech = new SplitType('.tech_title');
+    const charTech = document.querySelectorAll('.tech_title .char');
 
-    gsap.from('.tech', {
-      x:-100,
+    gsap.from(charTech, {
       opacity: 0,
       stagger: 0.3,
       transition: 0.5,
       scrollTrigger: {
-        trigger: '.about_informations',
-        start: 'top center',
+        trigger: '.tech_title',
+        start: '-20% center',
+        end: 'bottom center',
+        scrub: 1,
+      },
+    });
+
+
+    gsap.to('.tech_title', {
+      x:-200,
+      y:-200,
+      transition: 0.5,
+      scrollTrigger: {
+        trigger: '.tech_container',
+        start: '-20% center',
+        end: 'bottom center',
+        scrub: 1,
+    
+      },
+    });
+    gsap.from('.tech', {
+      x:-200,
+      y:-200,
+      stagger:0.1,
+      transition: 0.5,
+      scrollTrigger: {
+        trigger: '.tech_container',
+        start: '-20% center',
         end: 'center center',
         scrub: 1,
+        markers:true
       },
     });
   }

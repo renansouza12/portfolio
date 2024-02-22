@@ -52,29 +52,46 @@
         p{
             border: none;
         }
-        .language{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-           
-        }
         .tech_container{
             padding: 1rem 0;
-            border-top:1px solid var(--Grey) ;
             text-align: center;
+
+            h2{
+                font-size: 10vw;
+                transform: translate(80%,20%) rotate(20deg);
+            }
+
             .technologies{
                 height: 70vh;
-                width: 60vw;
+                width: 100%;
                 gap: 1rem;
             }
             .technologies{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                position: relative;
                 p{
-                    text-transform: uppercase;
-                    border-bottom: 1px solid var(--Light-gray);
-                    font-size: 20px;
+                    position: absolute;
+                    i{
+                        font-size: 4rem;
+                    }
+                    &:nth-child(1){
+                        left: 50%;
+                        top: 0%;
+                        transform: translate(-50%,-50%);
+                    }
+                    &:nth-child(2){
+                        left: 0;
+                        top: 30%;
+                    }
+                    &:nth-child(3){
+                        right: 0;
+                        top: 30%;
+                    }
+                    &:nth-child(4){
+                        left: 50%;
+                        bottom: 0%;
+                        transform: translate(-50%,-50%);
+                    }
+
                 }
             }
         }
