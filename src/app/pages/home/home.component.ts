@@ -142,7 +142,6 @@ export class HomeComponent implements OnInit{
         start: '-20% center',
         end: 'center center',
         scrub: 1,
-        markers:true
       },
     });
   }
