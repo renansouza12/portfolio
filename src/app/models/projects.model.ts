@@ -3,6 +3,7 @@ export type Projects = {
     name:string,
     description:string,
     images:{
+        coverImage:string,
         firstImage:string,
         secondImage:string,
         thirdImage:string,
