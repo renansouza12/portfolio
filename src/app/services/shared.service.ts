@@ -42,8 +42,8 @@ export class SharedService {
       'description':"An interactive card details form where you can effortlessly modify the cardholder's name, card number, birthdate, and CVC for a personalized and secure input experience.",
       images:{
         firstImage:"../../../assets/images/card-details-images/cardDetails-image.png",
-        secondImage:"../../../assets/images/card-details-images/cardDetails-image1.avif",
-        thirdImage:"../../../assets/images/card-details-images/cardDetails-image2.avif"
+        secondImage:"../../../assets/images/card-details-images/cardDetails-image1.png",
+        thirdImage:"../../../assets/images/card-details-images/cardDetails-image2.png"
       },
       website:'https://gregarious-crumble-17bc55.netlify.app/',
       repository:'https://github.com/renansouza12/card-details-form',
