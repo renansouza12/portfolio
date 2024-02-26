@@ -43,10 +43,10 @@ export class SharedService {
       'name':"Card Details",
       'description':"An interactive card details form where you can effortlessly modify the cardholder's name, card number, birthdate, and CVC for a personalized and secure input experience.",
       images:{
-        coverImage:"../../../assets/images/card-details-images/cardDetails-image.png",
-        firstImage:"../../../assets/images/card-details-images/cardDetails-image.png",
-        secondImage:"../../../assets/images/card-details-images/cardDetails-image1.png",
-        thirdImage:"../../../assets/images/card-details-images/cardDetails-image2.png"
+        coverImage:"../../../assets/images/card-details-images/cardDetailsCover-image.png",
+        firstImage:"../../../assets/images/card-details-images/cardDetails-image1.png",
+        secondImage:"../../../assets/images/card-details-images/cardDetails-image2.png",
+        thirdImage:"../../../assets/images/card-details-images/cardDetails-image3.png"
       },
       website:'https://gregarious-crumble-17bc55.netlify.app/',
       repository:'https://github.com/renansouza12/card-details-form',
@@ -58,7 +58,7 @@ export class SharedService {
       'name':"Quiz",
       'description':"A dynamic 'Discover Personality Type' quiz consisting of five questions, each generating four options dynamically to provide a personalized and engaging experience for users.",
       images:{
-        coverImage:"../../../assets/images/quiz-images/quiz-image.png",
+        coverImage:"../../../assets/images/quiz-images/quizCover-image.png",
         firstImage:"../../../assets/images/quiz-images/quiz-image.png",
         secondImage:"../../../assets/images/quiz-images/quiz-image1.avif",
         thirdImage:"../../../assets/images/quiz-images/quiz-image2.avif"
@@ -73,7 +73,7 @@ export class SharedService {
       'name':"Decoder",
       'description':"An application for encrypting and decrypting texts, where the letter 'e' is converted to 'enter,' 'i' to 'imes,' 'a' to 'ai,' 'o' to 'ober,' and 'u' to 'ufat'.",
       images:{
-        coverImage:"../../../assets/images/decoder-images/decoder-image.png",
+        coverImage:"../../../assets/images/decoder-images/decoderCover-image.png",
         firstImage:"../../../assets/images/decoder-images/decoder-image.png",
         secondImage:"../../../assets/images/decoder-images/decoder-image1.avif",
         thirdImage:"../../../assets/images/decoder-images/decoder-image2.avif"
@@ -88,7 +88,7 @@ export class SharedService {
       'name':"Alura Card Profile",
       'description':"A simple card using alura's API and displaying information about my profile on Alura's website, such as my ID, completed courses, and total steps.",
       images:{
-        coverImage:"../../../assets/images/alura-card-images/alura-card.png",
+        coverImage:"../../../assets/images/alura-card-images/alura-cardCover-image.png",
         firstImage:"../../../assets/images/alura-card-images/alura-card.png",
         secondImage:"../../../assets/images/alura-card-images/alura-card1.png",
         thirdImage:"../../../assets/images/alura-card-images/alura-card2.png"
