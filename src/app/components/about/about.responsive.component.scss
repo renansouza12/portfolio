@@ -1,8 +1,14 @@
 @media (max-width:768px) {
     .about{
-        p{
-            width: 80%;
+        .about_content{
+            .who{
+                p{
+                    width: 90%;
+                }
+            }
+          
         }
+       
     }
 }
 

@@ -50,6 +50,7 @@ export class HomeComponent implements OnInit{
     this.animateIntroduction();
     this.animateIntroductionTitle();
     this.animateAboutText();
+    this.animateAgeText();
     this.animateTech();
   }
 
@@ -85,17 +86,67 @@ export class HomeComponent implements OnInit{
       },
     });
   }
-
+  // this 
   private animateAboutText(): void {
     const myTextAbout = new SplitType('.about_text');
     const charAbout = document.querySelectorAll('.about_text .char');
 
+    const myTextAboutP = new SplitType('.about_p');
+    const charAboutP = document.querySelectorAll('.about_p .char');
+
     gsap.from(charAbout, {
+      x:-50,
+      opacity: 0,
+      stagger: 0.1,
+      transition: 0.5,
+      scrollTrigger: {
+        trigger: '.about_text',
+        start: '-20% center',
+        end: 'bottom center',
+        scrub: 1,
+      },
+    });
+    gsap.from(charAboutP, {
+      opacity: 0,
+      stagger: 0.3,
+      x:-20,
+      transition: 0.5,
+      scrollTrigger: {
+        trigger: '.who',
+        start: '-20% center',
+        end: 'bottom center',
+        scrub: 1,
+      },
+    });
+  }
+
+  private animateAgeText(): void {
+
+    const myTextAge = new SplitType('.age_text');
+    const charAge = document.querySelectorAll('.age_text .char');
+
+    const age_p = new SplitType('.age_p');
+    const charAgeP = document.querySelectorAll('.age_p .char');
+
+    gsap.from(charAge, {
+      x:-50,
+      opacity: 0,
+      stagger: 0.1,
+      transition: 0.5,
+      scrollTrigger: {
+        trigger: '.age',
+        start: '-20% center',
+        end: 'bottom center',
+        scrub: 1,
+      },
+    });
+    gsap.from(charAgeP, {
+      x:-20,
       opacity: 0,
       stagger: 0.3,
       transition: 0.5,
       scrollTrigger: {
-        trigger: '.about_text',
+        trigger: '.age',
         start: '-20% center',
         end: 'bottom center',
         scrub: 1,
