@@ -28,10 +28,10 @@ export class SharedService {
       'name':"Fuyu",
       'description':"A captivating landing page dedicated to the Y-3 shoe, skillfully crafted with Angular and GreenSock animations, ensuring a seamless and visually dynamic experience across all devices with responsive design.",
       images:{
-        coverImage:"../../../assets/images/fuyu-images/fuyu-image.png",
-        firstImage:"../../../assets/images/fuyu-images/fuyu-image.png",
-        secondImage:"../../../assets/images/fuyu-images/fuyu-image1.avif",
-        thirdImage:"../../../assets/images/fuyu-images/fuyu-image2.avif"
+        coverImage:"../../../assets/images/fuyu-images/fuyuCover-image.png",
+        firstImage:"../../../assets/images/fuyu-images/fuyu-image1.png",
+        secondImage:"../../../assets/images/fuyu-images/fuyu-image2.png",
+        thirdImage:"../../../assets/images/fuyu-images/fuyu-image3.png"
       },
       website:'https://fuyu-landing-page.vercel.app/',
       repository:'https://github.com/renansouza12/FUYU-landing-page',
