@@ -184,13 +184,12 @@ export class HomeComponent implements OnInit{
       },
     });
     gsap.from('.tech', {
-      x:-200,
-      y:-200,
+      x:200,
+      y:300,
       stagger:0.1,
-      transition: 0.5,
       scrollTrigger: {
         trigger: '.tech_container',
-        start: '-20% center',
+        start: '-20% top',
         end: 'center center',
         scrub: 1,
       },

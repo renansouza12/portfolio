@@ -14,18 +14,26 @@
 
 @media (max-width:425px) {
     .about{
+        .about_content{
+            .who{
+                p{
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+            .age{
+                p{
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+          
+        }
         .about_informations{
             .tech_container{
                 h2{
                     transform: translate(80%,40%) rotate(20deg);
-                }
-                .technologies{
-                    svg{
-                        height: 30px;
-                        width: 30px;
-                    }   
-                }
-            
+                }          
             }
             }
         }

@@ -8,8 +8,8 @@
     overflow: hidden;
 
     h3{
+        padding-bottom: 10px;
         color: var(--Light-gray);
-        font-size: 40px;
         font-size: 40px;
     }
 
@@ -86,7 +86,7 @@
         justify-content: center;
         align-items: center;
         gap: 10rem;
-        margin-top: 3rem;
+        margin-top: 6rem;
         h2{
             font-size: 7vw;
             font-weight: 100;
@@ -108,10 +108,11 @@
                 width: 100%;
                 gap: 1rem;
                 position: relative;
-                svg{
+                img{
                     height: 10vh;
                     width: 5vw;
                     position: absolute;
+                    
 
                     &:nth-child(1){
                         left: 0;
@@ -124,7 +125,7 @@
                     }
                      
                     &:nth-child(3){
-                        top: 50%;
+                        top: 40%;
                         left: 50%;
                     }
                     &:nth-child(4){
@@ -142,6 +143,10 @@
                     &:nth-child(7){
                         bottom: 0%;
                         left: 20%;
+                    }
+                    &:nth-child(8){
+                        bottom: 0%;
+                        left: 50%;
                     }
                 }
             }
