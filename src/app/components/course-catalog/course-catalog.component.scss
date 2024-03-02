@@ -84,40 +84,23 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-
-        background: rgba(1, 1, 1, 0.1);
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-        border-radius: 5px;
-        padding: 7px;
         .line{
             height: 1px;
             width: 20px;
             border-radius: 1rem;
-            background-color: var(--Black);
+            background-color: var(--Light-gray);
             transition:0.7s;
 
             &:nth-child(1){
-                transform:  rotate(1turn);
+                transform:  rotate(42deg) translate(5px, 4px);   
             }
-                      
             &:nth-child(2){
-                width: 15px;
+                opacity: 0;
+                transform: translateX(50px);
             }
             &:nth-child(3){
-                transform: rotate(-1turn) ;
+                transform:  rotate(-42deg) translate(5px, -3px);   
             }
-        }
-
-        &:hover .line:nth-child(1){
-            transform:  rotate(42deg) translate(5px, 5px);   
-        }
-        &:hover .line:nth-child(2){
-            transform:  translateX(50px);
-            opacity: 0;   
-        }
-        &:hover .line:nth-child(3){
-            transform:  rotate(-42deg) translate(4px, -4px);   
         }
     }
  }  

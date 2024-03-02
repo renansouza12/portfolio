@@ -136,7 +136,7 @@ export class CourseCatalogComponent{
   certificateDetails!:string;
 
   openCertificate(id: number): void {
-    this.certificateSelected = this.certificates.filter(item => item.id === id && item.name != "index");
+    this.certificateSelected = this.certificates.filter(item => item.id === id && item.name != "index" && item.name != "");
     this.certificateDetails = 'enable';
   }
 
