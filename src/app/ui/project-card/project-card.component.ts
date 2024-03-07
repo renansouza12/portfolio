@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, Input, OnInit ,Output,EventEmitter} from '@angular/core';
 
 import { gsap } from 'gsap';
@@ -7,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss'
 })

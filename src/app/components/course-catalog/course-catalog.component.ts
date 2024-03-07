@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Certificates } from 'src/app/models/projects.model';
 
 @Component({
   selector: 'app-course-catalog',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './course-catalog.component.html',
   styleUrls: ['./course-catalog.component.scss','course-catalog.responsive.component.scss']
 })

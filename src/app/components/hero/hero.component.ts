@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component,Input, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ShowcaseComponent } from '../showcase/showcase.component';
@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [RouterModule,ShowcaseComponent,CommonModule],
+  imports: [RouterModule,ShowcaseComponent,CommonModule,NgOptimizedImage],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss','hero.responsive.component.scss']
 })

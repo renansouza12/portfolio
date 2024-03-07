@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component,HostListener, OnInit } from '@angular/core';
 import { gsap } from "gsap";
 
 @Component({
   selector: 'app-cursor',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './cursor.component.html',
   styleUrl: './cursor.component.scss'
 })

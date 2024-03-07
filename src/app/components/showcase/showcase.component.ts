@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component,Input, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,NgOptimizedImage],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss','showcase.responsive.component.scss']
 })
