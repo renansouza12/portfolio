@@ -31,13 +31,14 @@
             content: "";
             height: 1px;
             width: 100%;
+            top: 50%;
             background-color: var(--Light-gray);
         }
 
         p{
-            width: 60%;
             text-align: center;
         }
+
     }
 
     .about_informations{

@@ -49,6 +49,7 @@ export class HomeComponent implements OnInit{
 
     this.animateIntroduction();
     this.animateIntroductionTitle();
+    this.animateAboutText();
     this.animateTech();
   }
 
@@ -85,22 +86,39 @@ export class HomeComponent implements OnInit{
     });
   }
   
-  // private animateAboutText(): void {
-  //   const myTextAbout = new SplitType('#about_txt');
-  //   const charAbout = document.querySelectorAll('#about_txt .char');
+  private animateAboutText(): void {
+    const myTextTitleAbout = new SplitType('.about_title');
+    const charTitleAbout = document.querySelectorAll('.about_title .char');
 
-  //   gsap.from(charAbout, {
-  //     opacity: 0,
-  //     stagger:0.1,
-  //     xPercent:-50,
-  //     scrollTrigger: {
-  //       trigger: '.about_content',
-  //       start: 'top center',
-  //       end: 'bottom center',
-  //       scrub: 1,
-  //     },
-  //   });
-  // }
+    gsap.from(charTitleAbout, {
+      opacity: 0,
+      stagger:0.1,
+      xPercent:-50,
+      scrollTrigger: {
+        trigger: '.about_content',
+        start: 'top center',
+        end: 'center center',
+        scrub: 1,
+      },
+    });
+
+    const myTextAbout = new SplitType('.about_text');
+    const charTextAbout = document.querySelectorAll('.about_text .char');
+
+
+    gsap.from(charTextAbout, {
+      opacity: 0,
+      xPercent:100,
+      stagger:.1,
+      scrollTrigger: {
+        trigger: '.about_content',
+        start: 'top center',
+        end: 'center center',
+        scrub: 1,
+      },
+    });
+
+  }
   
 
 
