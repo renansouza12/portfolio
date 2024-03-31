@@ -8,7 +8,7 @@
 
     <app-project-card  *ngFor="let p of catalogProjects; index as i"
         [id]="i + 1"
-        [imageCoverCard]="p.images.coverImage"    
+        [imageCoverCard]="p.images.firstImage"    
         (detail)="moreDetail(p.id)"
     />
 </div>
