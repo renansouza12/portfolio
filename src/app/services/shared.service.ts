@@ -98,5 +98,20 @@ export class SharedService {
       techs:'Html scss javascript',
       level:'Newba'
     },
+    {
+      'id':7,
+      'name':"Gallery",
+      'description':"Explore a sleek front-end project featuring Unsplash API integration. Browse a curated collection of high-quality images, each with details like publication date and author. Use the search bar to find precisely what you need.",
+      images:{
+        coverImage:"../../../assets/images/gallery-images/gallery-image.png",
+        firstImage:"../../../assets/images/gallery-images/gallery-image.png",
+        secondImage:"../../../assets/images/gallery-images/gallery-image1.png",
+        thirdImage:"../../../assets/images/gallery-images/gallery-image2.png"
+      },
+      website:'https://gallery-one-drab.vercel.app/',
+      repository:'https://github.com/renansouza12/Gallery',
+      techs:'Angular TypeScript Scss',
+      level:'Intermediary'
+    },
   ]
 }
